@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waiting List</title>
+    <style>
+        .success.error{
+            color: white;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+        }
+        .success{
+            background: green;
+        }
+        .error{
+            background: red;
+        }
+        body{
+            background-color: rgb(144, 142, 142);
+        }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+
+<style>
+  
+nav{
+background-color: rgb(152, 69, 152);
+margin-bottom: 40px;
+}
+
+.a1{
+    font-size: 1.8rem;
+    margin-left: 1100px;
+}
+.a2{
+    font-size: 1.8rem;
+    margin-left: 40px;
+}
+
+.logo{
+    font-size: 2.5rem;
+    margin-left: 50px;
+}
+
+</style>
+  <body>
+    <nav>
+      <a class="logo" href="#">Foody</a>
+      <a class="a1" href="FoodCourt.html">Home</a>
+      <a class="a2" href="Vendor.html">Vendor-Page</a>
+    </nav>
+
+    <div class="container">
+      <h1>ADD CUSTOMER</h1><BR></BR>
+      <form id="book-form">
+        <div>
+          <label for="title">Name</label>
+          <input type="text" class="u-full-width" id="title" />
+        </div>
+        <div>
+            <label for="isbn">Email</label>
+            <input type="text" class="u-full-width" id="isbn" />
+          </div>
+        <div>
+          <label for="author">Phone Number</label>
+          <input type="text" class="u-full-width" id="author" />
+        </div>
+        <div>
+            <input type="submit" value="Submit" class="u-full-width">
+        </div>
+      </form>
+      <hr>
+      <table class="u-full-width">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>EMAIL</th>
+                <th>PHONE</th>
+                <th>NOTIFY & DELETE</th>
+            </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+
+    <script src="waitingList.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>
